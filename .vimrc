@@ -10,6 +10,7 @@ Plug 'hashivim/vim-terraform'
 Plug 'simeji/winresizer'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'sheerun/vim-polyglot'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
