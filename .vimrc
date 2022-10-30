@@ -19,6 +19,9 @@ colo seoul256
 " Start NERDTree and put the cursor back in the other window.
 autocmd VimEnter * NERDTree | wincmd p
 
+" If NERDTree Files Tab is the Last window, quit
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 set tabstop=2
 set shiftwidth=2
 set nu
